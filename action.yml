@@ -1,0 +1,19 @@
+name: Test GitHub Action
+
+# Trigger the action on push to main branch
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout your repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Step 2: Custom step with your email in the name
+      - name: 24f2002696@ds.study.iitm.ac.in
+        run: echo "Hello, world from my GitHub Action!"
